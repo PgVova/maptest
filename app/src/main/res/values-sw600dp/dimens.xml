@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="pi_activity_weight">356dp</dimen>
+    <dimen name="magazine_preview_logo_height">310dp</dimen>
+    <dimen name="magazine_preview_logo_width">210dp</dimen>
+    <dimen name="toolbar_image_size">150dp</dimen>
+    <dimen name="home_btn_padding">45dp</dimen>
+
+    <dimen name="video_margin">80dp</dimen>
+
+
+
+</resources>

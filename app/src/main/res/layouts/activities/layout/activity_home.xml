@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+    <include layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:id="@+id/home_activity_container"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:id="@+id/activity_home_frame_switch"
+            android:background="@drawable/switch_bg"
+            android:layout_gravity="center"
+            android:layout_width="100dp"
+            android:layout_height="15dp">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/ic_switch"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+
+        </FrameLayout>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/home_fragment_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/colorTabBg"
+            app:tabSelectedTextColor="@color/colorPrimaryWhite"
+            app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="@color/colorPrimaryWhite"
+            app:tabMode="fixed" />
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/home_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <include
+                android:id="@+id/view_pager_distance"
+                layout="@layout/distance_frame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <include
+                android:id="@+id/view_pager_price"
+                layout="@layout/price_frame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </android.support.v4.view.ViewPager>
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

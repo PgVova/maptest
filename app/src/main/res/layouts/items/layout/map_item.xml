@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorItemBg"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+
+    <LinearLayout
+        android:id="@+id/map_item_price_container"
+        android:orientation="vertical"
+        android:layout_width="60dp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textStyle="bold"
+            android:textColor="@color/colorTextRed"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:text="35,5 P"
+            android:id="@+id/map_item_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textColor="@color/colorTextSecondary"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="6dp"
+            android:textSize="10sp"
+            android:text="час назад"
+            android:id="@+id/map_item_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/map_item_logo"
+        app:srcCompat="@drawable/layer2"
+        android:layout_toRightOf="@+id/map_item_price_container"
+        android:layout_width="20dp"
+        android:layout_height="20dp" />
+
+    <RelativeLayout
+        android:layout_toRightOf="@+id/map_item_logo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+       <LinearLayout
+           android:layout_marginLeft="12dp"
+           android:layout_marginRight="80dp"
+           android:orientation="vertical"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+           <TextView
+               android:textSize="14sp"
+               android:textStyle="bold"
+               android:textColor="@color/colorTextBlue"
+               android:layout_marginTop="16dp"
+               android:text="Автозаправка Shell"
+               android:id="@+id/map_item_primary_text"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content" />
+
+
+           <TextView
+               android:textSize="12sp"
+               android:textStyle="bold"
+               android:textColor="@color/colorTextSecondary"
+               android:text="ул. Садовническая, 57"
+               android:id="@+id/map_item_secondary_text"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content" />
+       </LinearLayout>
+
+        <FrameLayout
+            android:background="@drawable/rec5"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="56dp"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/forma"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="16dp"
+                android:layout_height="16dp" />
+
+            <TextView
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/colorTextBlue"
+                android:id="@+id/map_item_distance"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center_horizontal"
+                android:text="0,3 км"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+
+</RelativeLayout>

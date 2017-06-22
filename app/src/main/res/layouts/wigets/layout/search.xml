@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:background="@color/colorPrimaryWhite"
+    android:layout_width="match_parent"
+    android:layout_height="40dp">
+
+    <android.support.v7.widget.AppCompatImageView
+        app:srcCompat="@drawable/llipse"
+        android:id="@+id/search_loc"
+        android:layout_centerVertical="true"
+        android:padding="11dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+
+    <EditText
+        android:focusableInTouchMode="true"
+        android:imeOptions="flagNoExtractUi"
+        android:paddingLeft="10dp"
+        android:textStyle="italic"
+        android:textSize="14sp"
+        android:hint="Поиск заправки"
+        android:background="@drawable/ed_bg"
+        android:layout_marginRight="40dp"
+        android:layout_toRightOf="@+id/search_loc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/search_plus"
+        app:srcCompat="@drawable/plus"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:padding="11dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1010133035927",
+    "firebase_url": "https://mapo-59997.firebaseio.com",
+    "project_id": "mapo-59997",
+    "storage_bucket": "mapo-59997.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1010133035927:android:ca840c4b57ab207f",
+        "android_client_info": {
+          "package_name": "com.mmh.mapo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1010133035927-2sm3c6dr9d21b4n9li4bif61nkrh9fnu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mmh.mapo",
+            "certificate_hash": "6356dc3507e530923fd26e7dd9058fb7b003fe1f"
+          }
+        },
+        {
+          "client_id": "1010133035927-0krs0b3qeveel7p0bus3bhnt76q2gtkd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdqstEZVAIB5jdk76r5QvDbUjkk2cCxwI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1010133035927-0krs0b3qeveel7p0bus3bhnt76q2gtkd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

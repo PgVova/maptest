@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/toolbar_bg"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <android.support.v7.widget.AppCompatImageView
+            app:srcCompat="@drawable/group"
+            android:id="@+id/toolbar_action"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:paddingRight="24dp"
+            android:layout_gravity="center|left"
+            android:layout_width="48dp"
+            android:layout_height="48dp" />
+
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/toolbar_text"
+            style="@style/PrimaryText"
+            android:textColor="@color/colorPrimaryWhite"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <android.support.v7.widget.AppCompatImageView
+            app:srcCompat="@drawable/center"
+            android:id="@+id/toolbar_settings"
+            android:padding="10dp"
+            android:layout_gravity="center|right"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <include layout="@layout/search" />
+
+</LinearLayout>
